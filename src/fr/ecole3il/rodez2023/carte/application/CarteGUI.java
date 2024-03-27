@@ -16,8 +16,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-import fr.ecole3il.rodez2023.carte.elements.AlgorithmeChemin;
-import fr.ecole3il.rodez2023.carte.elements.AlgorithmeDijkstra;
+import fr.ecole3il.rodez2023.carte.chemin.algorithmes.AlgorithmeChemin;
+import fr.ecole3il.rodez2023.carte.chemin.algorithmes.AlgorithmeDijkstra;
 import fr.ecole3il.rodez2023.carte.elements.Carte;
 import fr.ecole3il.rodez2023.carte.elements.Case;
 import fr.ecole3il.rodez2023.carte.elements.Chemin;
