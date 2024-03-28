@@ -128,23 +128,4 @@ public class AdaptateurAlgorithme {
 
 		return cout;
 	}
-
-	/**
-	 * Affiche le chemin trouvé dans la console.
-	 *
-	 * @param chemin Le chemin à afficher.
-	 */
-	private static void afficherChemin(List<Noeud<Case>> chemin) {
-		System.out.println("Chemin trouvé :");
-		double coutTotal = 0.0;
-		for (Noeud<Case> noeud : chemin) {
-			Case caseNoeud = noeud.getValeur();
-			System.out.println("[" + caseNoeud.getX() + ", " + caseNoeud.getY() + "] - " + caseNoeud.getTuile());
-			if (chemin.indexOf(noeud) > 0) {
-				Noeud<Case> noeudPrecedent = chemin.get(chemin.indexOf(noeud) - 1);
-				coutTotal += calculerCout(noeudPrecedent.getValeur(), caseNoeud);
-			}
-		}
-		System.out.println("Coût total du chemin : " + coutTotal);
-	}
 }
